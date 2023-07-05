@@ -13,9 +13,10 @@
 <body>
 
   <div id="app">
-    <ul>
+    <ul v-if="isLoad">
       <li v-for="email in emails" :key="email">{{ email }}</li>
     </ul>
+    <p v-else>sto caricando</p>
   </div>
   
   <script src="./js/script.js"></script>
